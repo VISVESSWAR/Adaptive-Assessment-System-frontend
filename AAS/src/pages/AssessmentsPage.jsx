@@ -3,9 +3,7 @@ import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 
 const assessments = [
-  { id: 1, title: "JavaScript Basics", desc: "Test your JS fundamentals." },
-  { id: 2, title: "React Pro", desc: "Advanced React concepts." },
-  { id: 3, title: "Web Security", desc: "Essential security practices." },
+  { id: 1, title: "Basic test", desc: "Test your fundamentals." },
 ];
 
 export default function AssessmentsPage() {
