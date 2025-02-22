@@ -5,7 +5,7 @@ import ContactBox from "../components/ContactBox";
 
 export default function LandingPage() {
   return (
-    <div className="min-h-screen bg-[url(/blue1.jpg)] bg-fill flex flex-col z-30 backdrop-blur-md">
+    <div className="min-h-screen bg-[url(/bg.jpg)] bg-fill flex flex-col z-30 backdrop-blur-md">
       <Navbar />
       <div className="absolute inset-0 bg-black opacity-10 z-0"></div>
       <section className="flex-1 flex flex-col font-bold justify-center items-center gap-6 pt-24 z-10">
