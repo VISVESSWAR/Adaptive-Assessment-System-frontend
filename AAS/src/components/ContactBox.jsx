@@ -2,6 +2,7 @@ import { Button, TextField } from "@mui/material";
 import { motion } from "framer-motion";
 
 export default function ContactBox() {
+    
   return (
     <motion.div
       id="contact"
@@ -23,8 +24,8 @@ export default function ContactBox() {
               color: "#fff",
               margin: "5px 0px",
               "& fieldset": { borderColor: "white" },
-              "&:hover fieldset": { borderColor: "#f472b6" },
-              "&.Mui-focused fieldset": { borderColor: "#f472b6" },
+              "&:hover fieldset": { borderColor: "white" },
+              "&.Mui-focused fieldset": { borderColor: "white" },
             },
             "& .MuiInputLabel-root": { color: "#fff" },
           }}
@@ -42,8 +43,8 @@ export default function ContactBox() {
               color: "#fff",
               margin: "5px 0px",
               "& fieldset": { borderColor: "white" },
-              "&:hover fieldset": { borderColor: "#f472b6" },
-              "&.Mui-focused fieldset": { borderColor: "#f472b6" },
+              "&:hover fieldset": { borderColor: "white" },
+              "&.Mui-focused fieldset": { borderColor: "white" },
             },
             "& .MuiInputLabel-root": { color: "#fff" },
           }}
@@ -61,8 +62,8 @@ export default function ContactBox() {
               color: "#fff",
               margin: "5px 0px",
               "& fieldset": { borderColor: "white" },
-              "&:hover fieldset": { borderColor: "#f472b6" },
-              "&.Mui-focused fieldset": { borderColor: "#f472b6" },
+              "&:hover fieldset": { borderColor: "white" },
+              "&.Mui-focused fieldset": { borderColor: "white" },
             },
             "& .MuiInputLabel-root": { color: "#fff" },
           }}

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@mui/material";
 import { motion } from "framer-motion";
+import Navbar from "../components/Navbar";
 
 const questions = [
   {
@@ -33,11 +34,14 @@ export default function QuizPage() {
 
   return (
     <motion.div
-      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#9600969d] via-[#f0f0f0] to-[#96009671] transition-opacity duration-300 ease-in-out"
+      className="min-h-screen flex items-center justify-center bg-[url(/blue1.jpg)] bg-center bg-cover transition-opacity duration-300 ease-in-out"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
     >
-      <div className="bg-white p-8 rounded-2xl shadow-xl max-w-lg w-full">
+        <Navbar/>
+      <div
+        className="bg-white/20 backdrop-blur-lg p-8 rounded-2xl shadow-2xl max-w-lg w-full border border-white/30"
+      >
         <h2 className="text-2xl font-semibold mb-4 text-gray-800">
           Question {idx + 1} of {questions.length}
         </h2>
@@ -48,7 +52,7 @@ export default function QuizPage() {
               key={i}
               onClick={() => setSelected(i)}
               className={`w-full p-3 rounded-xl border ${
-                selected === i ? "bg-pink-600 text-white" : "bg-gray-100"
+                selected === i ? "bg-[#092c8eb6] text-white" : "bg-gray-100"
               }`}
             >
               {opt}
@@ -59,7 +63,7 @@ export default function QuizPage() {
           onClick={handleNext}
           disabled={selected === null}
           variant="contained"
-          className="w-full !my-3 !p-2 !rounded-xl bg-pink-600 hover:bg-pink-700"
+          className="w-full !my-3 !p-2 !rounded-xl !bg-[#098e26e0] hover:bg-pink-700"
         >
           {idx === questions.length - 1 ? "Finish" : "Next"}
         </Button>
