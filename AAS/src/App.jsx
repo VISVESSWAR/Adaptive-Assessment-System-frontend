@@ -1,9 +1,16 @@
-function App() {
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LandingPage from './pages/Landingpage.jsx';
+import AssessmentsPage from './pages/AssessmentsPage';
+import QuizPage from './pages/QuizPage';
+
+export default function App() {
   return (
-    <div className="flex bg-cyan-900 w-full h-[100vh]">
-      <h1>hello</h1>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/assessments" element={<AssessmentsPage />} />
+        <Route path="/quiz/:id" element={<QuizPage />} />
+      </Routes>
+    </Router>
   );
 }
-
-export default App;
